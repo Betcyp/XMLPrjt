@@ -14,21 +14,21 @@ public class CreditAccountDetails {
 		AccNo = accNo;
 		MmbId = mmbId;
 	}
-	@XmlElement
+	@XmlElement(name="Nm")
 	public void setNm(String nm) {
 		Nm = nm;
 	}
 	public String getNm() {
 		return Nm;
 	}
-	@XmlElement
+	@XmlElement(name="AccNo")
 	public void setAccNo(String accNo) {
 		AccNo = accNo;
 	}
 	public String getAccNo() {
 		return AccNo;
 	}
-	@XmlElement
+	@XmlElement(name="MmbId")
 	public void setMmbId(String mmbId) {
 		MmbId = mmbId;
 	}
