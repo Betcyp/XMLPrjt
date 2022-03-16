@@ -2,21 +2,22 @@ package com.first;
 
 import javax.xml.bind.annotation.XmlElement;
 
-public class Transforms {
-	private String TransformAlgorithm;
 
-	public Transforms(String transformAlgorithm) {
+public class Transforms {
+	private String Transform;
+
+	public Transforms(String transform) {
 		super();
-		this.TransformAlgorithm = transformAlgorithm;
+		this.Transform = transform;
 	}
 
-	@XmlElement(name="TransformAlgorithm")
-	public void setTransformAlgorithm(String transformAlgorithm) {
-		TransformAlgorithm = transformAlgorithm;
+	@XmlElement(name="Transform")
+	public void setTransform(String transform) {
+		Transform = transform;
 	}
 	
-	public String getTransformAlgorithm() {
-		return TransformAlgorithm;
+	public String getTransform() {
+		return Transform;
 	}
 
 }

@@ -3,42 +3,42 @@ package com.first;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-@XmlType(propOrder={"canonicalizationMethodAlgrthm","signatureMethodAlgorithm","referenceURI"})
+@XmlType(propOrder={"canonicalizationMethod","signatureMethod","reference"})
 public class SignedInfo {
-	private String CanonicalizationMethodAlgrthm;
-	private String SignatureMethodAlgorithm;
-	private ReferenceURI ReferenceURI;
+	private String CanonicalizationMethod;
+	private String SignatureMethod;
+	private Reference Reference;
 	
 	
-	public SignedInfo(String canonicalizationMethodAlgrthm, String signatureMethodAlgorithm, 
-			ReferenceURI referenceURI) {
+	public SignedInfo(String canonicalizationMethod, String signatureMethod, 
+			Reference reference) {
 		super();
-		this.CanonicalizationMethodAlgrthm = canonicalizationMethodAlgrthm;
-		this.SignatureMethodAlgorithm = signatureMethodAlgorithm;
-		this.ReferenceURI = referenceURI;
+		this.CanonicalizationMethod = canonicalizationMethod;
+		this.SignatureMethod = signatureMethod;
+		this.Reference = reference;
 		
 	}
 	@XmlElement(name="CanonicalizationMethod")
-	public void setCanonicalizationMethodAlgrthm(String canonicalizationMethodAlgrthm) {
-		CanonicalizationMethodAlgrthm = canonicalizationMethodAlgrthm;
+	public void setCanonicalizationMethod(String canonicalizationMethod) {
+		CanonicalizationMethod = canonicalizationMethod;
 	}
-	public String getCanonicalizationMethodAlgrthm() {
-		return CanonicalizationMethodAlgrthm;
+	public String getCanonicalizationMethod() {
+		return CanonicalizationMethod;
 	}
 	
 	@XmlElement(name="SignatureMethod")
-	public void setSignatureMethodAlgorithm(String signatureMethodAlgorithm) {
-		SignatureMethodAlgorithm = signatureMethodAlgorithm;
+	public void setSignatureMethod(String signatureMethod) {
+		SignatureMethod = signatureMethod;
 	}
-	public String getSignatureMethodAlgorithm() {
-		return SignatureMethodAlgorithm;
+	public String getSignatureMethod() {
+		return SignatureMethod;
 	}
 	
-	@XmlElement(name="ReferenceURI")
-	public void setReferenceURI(ReferenceURI referenceURI) {
-		ReferenceURI = referenceURI;
+	@XmlElement(name="Reference")
+	public void setReference(Reference reference) {
+		Reference = reference;
 	}
-	public ReferenceURI getReferenceURI() {
-		return ReferenceURI;
+	public Reference getReference() {
+		return Reference;
 	}	
 }

@@ -37,7 +37,7 @@ public class Document {
 		return mndt;
 	}
 
-	@XmlElement(name="Signature")
+    @XmlElement(namespace="http://www.w3.org/xmldsig#",name="Signature")
 	public ArrayList<Signature> getDocument3() {
 		return sign;
 	}

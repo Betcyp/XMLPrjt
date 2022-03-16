@@ -22,7 +22,8 @@ public class CreateXML {
 					new DebitTransactions(XMLConstants.DBTR_NAME,XMLConstants.DBTR_ACC_NO,XMLConstants.DBTR_ACCT_TYPE,XMLConstants.DBTR_CONS_REF_NO,XMLConstants.DBTR_PHONE,XMLConstants.DBTR_MOBILE,XMLConstants.DBTR_EMAIL),
 					new CreditAccountDetails(XMLConstants.CRACCD1_NM,XMLConstants.CRACCD1_ACC_NO,XMLConstants.CRACCD1_MMB_ID))));
 			
-			npci.addSignature(new Signature(new SignedInfo("VBN","BNH",new ReferenceURI(new Transforms("http://www.w3.org//xmldsig #enveloped-signature"),"abc",XMLConstants.DIGEST_VALUE)),XMLConstants.SIGNATURE_VALUE,new KeyInfo(new X509Data(XMLConstants.X509_SUBJECT_NAME,XMLConstants.X509_CERTIFICATE))));
+			npci.addSignature(new Signature(new SignedInfo(XMLConstants.CANONICALIZATION_METHOD,XMLConstants.SIGNATURE_METHOD,new Reference(XMLConstants.REFERENCE, new Transforms(XMLConstants.TRANSFORM),XMLConstants.DIGEST_METHOD,XMLConstants.DIGEST_VALUE)),XMLConstants.SIGNATURE_VALUE,
+					new KeyInfo(new X509Data(XMLConstants.X509_SUBJECT_NAME,XMLConstants.X509_CERTIFICATE))));
 			
 			
 			JAXBContext jaxbContext = JAXBContext.newInstance(Document.class);
@@ -41,5 +42,10 @@ public class CreateXML {
 		
 	}
 }
-
+/*CanonicalizationMethod Algorithm= http://www.w3.org/TR/REC-xml-c14n-20010315
+ * 								http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments 
+ * SignatureMethod Algorithm=http://www.w3.org/xmldsig-more#rsa-sha256 
+ *Transform Algorithm=http://www.w3.org/xmldsig#enveloped-signature 
+ * DigestMethod Algorithm=http://www.w3.org/xmlenc#sha256
+ */
 

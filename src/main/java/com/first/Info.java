@@ -11,53 +11,53 @@ public class Info {
 	private String CatDesc;
 	private String Name;
 	private String Spn_Bnk_Nm;
-	public Info(String Id, String CatCode, String UtilCode, String CatDesc, String Name, String Spn_Bnk_Nm) {
+	public Info(String id, String catCode, String utilCode, String catDesc, String name, String spn_Bnk_Nm) {
 		super();
-		this.Id = Id;
-		this.CatCode = CatCode;
-		this.UtilCode = UtilCode;
-		this.CatDesc = CatDesc;
-		this.Name = Name;
-		this.Spn_Bnk_Nm = Spn_Bnk_Nm;
+		this.Id = id;
+		this.CatCode = catCode;
+		this.UtilCode = utilCode;
+		this.CatDesc = catDesc;
+		this.Name = name;
+		this.Spn_Bnk_Nm = spn_Bnk_Nm;
 	}
 	@XmlElement(name="Id")
-	public void setId(String Id) {
-		Id = Id;
+	public void setId(String id) {
+		Id = id;
 	}
 	public String getId() {
 		return Id;
 	}
 	@XmlElement(name="CatCode")
-	public void setCatCode(String CatCode) {
-		CatCode = CatCode;
+	public void setCatCode(String catCode) {
+		CatCode = catCode;
 	}
 	public String getCatCode() {
 		return CatCode;
 	}
 	@XmlElement(name="UtilCode")
-	public void setUtilCode(String UtilCode) {
-		UtilCode = UtilCode;
+	public void setUtilCode(String utilCode) {
+		UtilCode = utilCode;
 	}
 	public String getUtilCode() {
 		return UtilCode;
 	}
 	@XmlElement(name="CatDesc")
-	public void setCatDesc(String CatDesc) {
-		CatDesc = CatDesc;
+	public void setCatDesc(String catDesc) {
+		CatDesc = catDesc;
 	}
 	public String getCatDesc() {
 		return CatDesc;
 	}
 	@XmlElement(name="Name")
-	public void setName(String Name) {
-		Name = Name;
+	public void setName(String name) {
+		Name = name;
 	}
 	public String getName() {
 		return Name;
 	}
 	@XmlElement(name="Spn_Bnk_Nm")
-	public void setSpn_Bnk_Nm(String Spn_Bnk_Nm) {
-		Spn_Bnk_Nm = Spn_Bnk_Nm;
+	public void setSpn_Bnk_Nm(String spn_Bnk_Nm) {
+		Spn_Bnk_Nm = spn_Bnk_Nm;
 	}
 	public String getSpn_Bnk_Nm() {
 		return Spn_Bnk_Nm;

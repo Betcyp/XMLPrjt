@@ -10,33 +10,33 @@ public class GroupHeader {
 	private String CreDtTm;
 	private ReqInitPty ReqInitPty;
 	private Info Info;
-	public GroupHeader(String NPCI_RefMsgId, String CreDtTm,ReqInitPty ReqInitPty,Info Info) {
+	public GroupHeader(String nPCI_RefMsgId, String creDtTm,ReqInitPty reqInitPty,Info info) {
 		super();
-		this.NPCI_RefMsgId = NPCI_RefMsgId;
-		this.CreDtTm = CreDtTm;
-		this.ReqInitPty = ReqInitPty;
-		this.Info = Info;
+		this.NPCI_RefMsgId = nPCI_RefMsgId;
+		this.CreDtTm = creDtTm;
+		this.ReqInitPty = reqInitPty;
+		this.Info = info;
 		
 	}
 
 	@XmlElement(name="NPCI_RefMsgId")
-	public void setNPCI_RefMsgId(String NPCI_RefMsgId) {
-		NPCI_RefMsgId = NPCI_RefMsgId;
+	public void setNPCI_RefMsgId(String nPCI_RefMsgId) {
+		NPCI_RefMsgId = nPCI_RefMsgId;
 	}
 	public String getNPCI_RefMsgId() {
 		return NPCI_RefMsgId;
 	}
 	
 	@XmlElement(name="CreDtTm")
-	public void setCreDtTm(String CreDtTm) {
-		CreDtTm = CreDtTm;
+	public void setCreDtTm(String creDtTm) {
+		CreDtTm = creDtTm;
 	}
 	public String getCreDtTm() {
 		return CreDtTm;
 	}
 	@XmlElement(name="ReqInitPty")
-	public void setReqInitPty(ReqInitPty ReqInitPty) {
-		ReqInitPty = ReqInitPty;
+	public void setReqInitPty(ReqInitPty reqInitPty) {
+		ReqInitPty = reqInitPty;
 	}
 	public ReqInitPty getReqInitPty() {
 		return ReqInitPty;
@@ -44,8 +44,8 @@ public class GroupHeader {
 
 	
 	@XmlElement(name="Info")
-	public void setInfo(Info Info) {
-		Info = Info;
+	public void setInfo(Info info) {
+		Info = info;
 	}
 	public Info getInfo() {
 		return Info;

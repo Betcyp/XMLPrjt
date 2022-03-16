@@ -1,8 +1,8 @@
 package com.first;
 
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
 
+import javax.xml.bind.annotation.XmlType;
 @XmlType(propOrder={"signedInfo","signatureValue","keyInfo"})
 public class Signature {
 	private SignedInfo SignedInfo ;
@@ -36,8 +36,5 @@ public class Signature {
 	public KeyInfo getKeyInfo() {
 		return KeyInfo;
 	}
-	
-	
-	
-	
+
 }

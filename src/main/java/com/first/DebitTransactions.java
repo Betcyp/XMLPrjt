@@ -22,49 +22,49 @@ public class DebitTransactions {
 		Mobile = mobile;
 		Email = email;
 	}
-	@XmlElement
+	@XmlElement(name="Nm")
 	public void setNm(String nm) {
 		Nm = nm;
 	}
 	public String getNm() {
 		return Nm;
 	}
-	@XmlElement
+	@XmlElement(name="AccNo")
 	public void setAccNo(String accNo) {
 		AccNo = accNo;
 	}
 	public String getAccNo() {
 		return AccNo;
 	}
-	@XmlElement
+	@XmlElement(name="Acct_Type")
 	public void setAcct_Type(String acct_Type) {
 		Acct_Type = acct_Type;
 	}
 	public String getAcct_Type() {
 		return Acct_Type;
 	}
-	@XmlElement
+	@XmlElement(name="Cons_Ref_No")
 	public void setCons_Ref_No(int cons_Ref_No) {
 		Cons_Ref_No = cons_Ref_No;
 	}
 	public int getCons_Ref_No() {
 		return Cons_Ref_No;
 	}
-	@XmlElement
+	@XmlElement(name="Phone")
 	public void setPhone(String phone) {
 		Phone = phone;
 	}
 	public String getPhone() {
 		return Phone;
 	}
-	@XmlElement
+	@XmlElement(name="Mobile")
 	public void setMobile(String mobile) {
 		Mobile = mobile;
 	}
 	public String getMobile() {
 		return Mobile;
 	}
-	@XmlElement
+	@XmlElement(name="Email")
 	public void setEmail(String email) {
 		Email = email;
 	}

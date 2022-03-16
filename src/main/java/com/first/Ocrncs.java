@@ -15,28 +15,28 @@ public class Ocrncs {
 		FrstColltnDt = frstColltnDt;
 		FnlColltnDt = fnlColltnDt;
 	}
-	@XmlElement
+	@XmlElement(name="SeqTp")
 	public void setSeqTp(String seqTp) {
 		SeqTp = seqTp;
 	}
 	public String getSeqTp() {
 		return SeqTp;
 	}
-	@XmlElement
+	@XmlElement(name="Frqcy")
 	public void setFrqcy(String frqcy) {
 		Frqcy = frqcy;
 	}
 	public String getFrqcy() {
 		return Frqcy;
 	}
-	@XmlElement
+	@XmlElement(name="FrstColltnDt")
 	public void setFrstColltnDt(String frstColltnDt) {
 		FrstColltnDt = frstColltnDt;
 	}
 	public String getFrstColltnDt() {
 		return FrstColltnDt;
 	}
-	@XmlElement
+	@XmlElement(name="FnlColltnDt")
 	public void setFnlColltnDt(String fnlColltnDt) {
 		FnlColltnDt = fnlColltnDt;
 	}

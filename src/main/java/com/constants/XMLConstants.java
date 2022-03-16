@@ -51,4 +51,13 @@ public class XMLConstants {
 
 	public static final String DIGEST_VALUE ="AYs4ca0F5LoisHUQ1JdXyK3bmcLiFxGgA0vOFQIosBY=";
 
+	public static final String CANONICALIZATION_METHOD = "Algorithm = http://www.w3.org/TR/REC-xml-c14n-20010315";
+	
+	public static final String SIGNATURE_METHOD = "Algorithm = http://www.w3.org/xmldsig-more#rsa-sha256";
+	
+	public static final String REFERENCE="";
+			
+	public static final String TRANSFORM= "Algorithm = http://www.w3.org/xmldsig#enveloped-signature";
+
+	public static final String DIGEST_METHOD ="Algorithm = http://www.w3.org/xmlenc#sha256";
 }
